@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Вход для сотрудников — ВР-94</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .employee-page{min-height:100vh;display:flex;flex-direction:column}
+    .employee-top{padding:22px 6.3%;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .employee-top>a:last-child{font-size:11px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:5px}
+    .employee-main{width:min(960px,88%);margin:auto;padding:68px 0 80px;flex:1}
+    .employee-card{background:#ebe7de;padding:clamp(25px,5vw,58px);border:1px solid var(--line)}
+    .employee-card h1{font-size:clamp(35px,5vw,58px);margin-bottom:22px}
+    .employee-lead{max-width:650px;font-size:14px;line-height:1.9;color:#6d6e65}
+    .employee-button{display:inline-flex;align-items:center;gap:24px;margin:24px 0 12px;padding:16px 22px;background:var(--dark);color:white;text-decoration:none;font-size:12px;font-weight:600}
+    .employee-button:hover{background:#4b4c43}
+    .employee-note{padding:18px 20px;border-left:3px solid var(--accent);background:#f7f4ed;color:#66675e;font-size:12px;line-height:1.8;margin-top:22px}
+    .employee-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;margin:32px 0 0}
+    .employee-step{border-top:1px solid var(--line);padding-top:15px}
+    .employee-step b{font-size:10px;color:var(--accent);letter-spacing:1px}
+    .employee-step h2{font-size:18px;letter-spacing:-.4px;margin:12px 0}
+    .employee-step p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+    .employee-back{display:inline-block;margin-top:28px;font-size:11px;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:4px}
+    @media(max-width:600px){.employee-top{padding:18px 6%}.employee-main{padding:38px 0 50px}.employee-steps{grid-template-columns:1fr}.employee-button{width:100%;justify-content:space-between}}
+  </style>
+</head>
+<body class="employee-page">
+  <header class="employee-top">
+    <a class="brand" href="index.html" aria-label="ВР-94 — на сайт"><span class="brand-symbol">ВР<span>·</span>94</span><span class="brand-caption">МЕБЕЛЬ И ФАСАДЫ НА ЗАКАЗ</span></a>
+    <a href="index.html">Вернуться на сайт ↗</a>
+  </header>
+  <main class="employee-main">
+    <div class="employee-card">
+      <p class="eyebrow"><i></i> ВР-94 / СЛУЖЕБНЫЙ ДОСТУП</p>
+      <h1>Вход для<br><em>сотрудников.</em></h1>
+      <p class="employee-lead">Эта страница предназначена только для сотрудников, которым владелец выдал доступ к редактору каталога. Клиенты могут свободно смотреть каталог, открывать фотографии и связываться с компанией — регистрация им не нужна.</p>
+      <a class="employee-button" href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer">Войти в редактор фотографий <span>↗</span></a>
+      <div class="employee-note"><strong>Нет доступа к каталогу?</strong> Руководитель должен подключить репозиторий сайта к Pages CMS и выдать вашей учётной записи доступ к репозиторию. После этого войдите через GitHub, используя приглашённую учётную запись. Пароль руководителя вам не нужен.</div>
+    </div>
+    <div class="employee-steps">
+      <article class="employee-step"><b>01 / ВХОД</b><h2>Откройте редактор</h2><p>Нажмите кнопку выше и войдите в Pages CMS через свою учётную запись. Доступ есть только у приглашённых редакторов.</p></article>
+      <article class="employee-step"><b>02 / КАТАЛОГ</b><h2>Добавьте проект</h2><p>Откройте «Каталог и фотографии проектов», создайте запись, выберите рубрику и загрузите изображение.</p></article>
+      <article class="employee-step"><b>03 / СОХРАНЕНИЕ</b><h2>Сохраните изменения</h2><p>Нажмите Save/Commit. Фото и описание сохранятся в репозитории, подключённый хостинг опубликует обновление.</p></article>
+      <article class="employee-step"><b>04 / ДОСТУПЫ</b><h2>Если сотрудник сменился</h2><p>Владелец сайта приглашает нового редактора и отзывает доступ прежнего. Не передавайте общий пароль или коды подтверждения.</p></article>
+    </div>
+    <a class="employee-back" href="index.html#portfolio">← Вернуться в каталог</a>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-symbol">ВР<span>·</span>94</span><span class="brand-caption">МЕБЕЛЬ И ФАСАДЫ НА ЗАКАЗ</span></a><p>ТОО «ВР-94» · Тараз, Казахстан</p><a class="back-top" href="index.html">На сайт ↑</a></footer>
+</body>
+</html>
