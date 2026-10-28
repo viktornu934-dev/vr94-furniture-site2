@@ -1,0 +1,30 @@
+media:
+  input: site/media/portfolio
+  output: /media/portfolio
+  extensions:
+    - jpg
+    - jpeg
+    - png
+    - webp
+  rename: safe
+
+content:
+  - name: projects
+    label: Портфолио мебели
+    type: file
+    path: site/data/projects.json
+    format: code
+    options:
+      language: json
+    operations:
+      delete: false
+
+  - name: site-settings
+    label: Контакты и настройки сайта
+    type: file
+    path: site/data/site.json
+    format: code
+    options:
+      language: json
+    operations:
+      delete: false
