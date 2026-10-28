@@ -1,3 +1,4 @@
+
 media:
   input: site/media/portfolio
   output: /media/portfolio
@@ -13,9 +14,55 @@ content:
     label: Портфолио мебели
     type: file
     path: site/data/projects.json
-    format: code
-    options:
-      language: json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Название проекта
+        type: string
+        required: true
+
+      - name: category
+        label: Категория мебели
+        type: select
+        required: true
+        options:
+          values:
+            - Кухни
+            - Гостиные
+            - Спальни
+            - Прихожие
+            - Шкафы и гардеробные
+            - Мебель для ванной
+            - Школьная и офисная мебель
+            - Стеллажи
+            - Мягкая мебель
+            - Другое
+
+      - name: image
+        label: Фотография
+        type: image
+        required: true
+        options:
+          extensions:
+            - jpg
+            - jpeg
+            - png
+            - webp
+          rename: safe
+
+      - name: description
+        label: Описание
+        type: text
+
+      - name: alt
+        label: Описание фотографии
+        type: string
+
+      - name: year
+        label: Год
+        type: string
+
     operations:
       delete: false
 
