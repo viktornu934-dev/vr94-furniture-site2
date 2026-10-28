@@ -1,0 +1,10 @@
+{
+  "project": "ТОО ВР-94",
+  "site_output": "site",
+  "cms": "Pages CMS",
+  "photo_included": false,
+  "ownership": "GitHub and Cloudflare accounts should be registered by user",
+  "cloudflare_worker": "vr94-furniture-site2",
+  "wrangler_config": "wrangler.jsonc",
+  "assets_directory": "./site"
+}
